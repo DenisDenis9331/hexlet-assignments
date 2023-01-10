@@ -1,6 +1,6 @@
 # Ipgeobase
 
-[![build, lint, test](https://github.com/denis1011101/ipgeobase/actions/workflows/main.yml/badge.svg)](https://github.com/denis1011101/ipgeobase/actions/workflows/main.yml)
+[![hexlet-check](https://github.com/denis1011101/hexlet-assignments/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/denis1011101/hexlet-assignments/actions/workflows/hexlet-check.yml)
 
 Welcome to my new study gem! This gem created for Hexlet Ruby course. It's a simple gem for getting geolocation data by IP address.
 
