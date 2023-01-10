@@ -3,6 +3,7 @@
 require 'test_helper'
 WebMock.disable_net_connect!(allow: ['http://ip-api.com'])
 
+# This class is used to test the Ipgeobase module
 class TestIpgeobase < Minitest::Test
   def test_that_it_has_a_version_number
     refute_nil ::Ipgeobase::VERSION
