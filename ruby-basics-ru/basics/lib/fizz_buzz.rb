@@ -2,6 +2,8 @@
 
 # BEGIN
 def fizz_buzz(start, stop)
+  return if start > stop
+
   (start..stop).map do |number|
     if number % 15 == 0
       'FizzBuzz'
@@ -14,6 +16,4 @@ def fizz_buzz(start, stop)
     end
   end.join(' ')
 end
-
-puts fizz_buzz(3, 5)
 # END
