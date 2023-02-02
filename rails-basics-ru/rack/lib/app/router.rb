@@ -5,12 +5,12 @@ require 'rack'
 class Router
   def call(env)
     # BEGIN
-    handlers = { '/' => -> { [200, {'Content-Type' => 'text/plain'}, ['Welcome to the home page!']] },
-                 '/about' => -> { [200, {'Content-Type' => 'text/plain'}, ['This is the about page.']] } }
+    handlers = { '/' => -> { [200, {'Content-Type' => 'text/plain'}, ['Hello, World!']] },
+                 '/about' => -> { [200, {'Content-Type' => 'text/plain'}, ['About page']] } }
     response = handlers[env['PATH_INFO']]
     return response.call if response
 
-    [404, {'Content-Type' => 'text/plain'}, ['Route not found.']]
+    [404, {'Content-Type' => 'text/plain'}, ['404 Not Found']]
     # END
   end
 end
