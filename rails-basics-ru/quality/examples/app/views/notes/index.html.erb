@@ -1,0 +1,6 @@
+<h1>Notes</h1>
+
+<% @notes.each do |bulletin| %>
+<h4><%= link_to bulletin.title, bulletin_path(note) %></h4>
+<p><%= bulletin.body %></p>
+<% end %>
