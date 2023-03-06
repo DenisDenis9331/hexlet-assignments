@@ -3,6 +3,10 @@ h1
 p
   = @article.body
 small
+  = @article.title
+p
+  = @article.body
+small
   | Author: #{@article.author}
   i< = @article.created_at.in_time_zone('Moscow').strftime('%H:%m %d.%m.%y')
 hr
